@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    height: 100vh;
+    margin: 0;
+}
+
+.contenedor-lista-tareas {
+    width: 500px;
+}
+
+.entrada-tarea {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 5px;
+}
+
+#listaTareas {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+}
+
+.item-tarea {
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 90px;
+    border: 2px solid #666; 
+}
+
+.item-tarea.alta {
+    background-color: #ff4d4d;
+    border-color: #ff1a1a; 
+}
+
+.item-tarea.media {
+    background-color: #ffcc00; 
+    border-color: #e6b800; 
+    color: black; 
+}
+
+.item-tarea.baja {
+    background-color: #4caf50;
+    border-color: #388e3c; 
+}
+
+.item-tarea button {
+    background-color: white;
+    color: #666;
+    border: 1px solid #666;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.item-tarea button:hover {
+    background-color: #f0f0f0;
+}
+
+.modal {
+    display: none; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.contenido-modal {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    width: 300px;
+}
+
+.contenido-modal button {
+    margin: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
